@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Odonto Excellence – Tecnologia de ponta e atendimento humanizado para transformar o seu sorriso. Agende sua avaliação gratuita." />
+  <meta name="keywords" content="dentista, implantes dentários, estética dental, clareamento, Odonto Excellence, sorriso perfeito" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Odonto Excellence – Seu Sorriso, Nossa Excelência" />
+  <meta property="og:description" content="Clínica odontológica especializada em implantes, estética e tratamentos gerais. Agende sua avaliação." />
+  <meta property="og:type" content="website" />
+  <title>Odonto Excellence – Seu Sorriso, Nossa Excelência</title>
+
+  <!-- Google Fonts: Cormorant Garamond (display elegante) + DM Sans (corpo limpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       BARRA DE URGÊNCIA — aumenta senso de escassez (CRO)
+  ============================================================ -->
+  <div class="urgency-bar" id="urgencyBar">
+    <span>
+      <i class="fa-solid fa-certificate"></i>
+      Avaliação gratuita por tempo limitado — vagas limitadas esta semana
+    </span>
+    <button class="urgency-close" id="urgencyClose" aria-label="Fechar">×</button>
+  </div>
+
+  <!-- ============================================================
+       NAVEGAÇÃO FIXA
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon"><i class="fa-solid fa-tooth"></i></span>
+        <span class="logo-text">Odonto<strong>Excellence</strong></span>
+      </a>
+
+      <!-- Links desktop -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#procedimentos" class="nav-link">Procedimentos</a></li>
+        <li><a href="#dentista" class="nav-link">Especialista</a></li>
+        <li><a href="#transformacoes" class="nav-link">Resultados</a></li>
+        <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+        <li><a href="#localizacao" class="nav-link">Localização</a></li>
+        <li>
+          <a href="https://wa.me/5544999999999?text=Olá!%20Gostaria%20de%20agendar%20minha%20avaliação%20gratuita."
+             class="btn btn-primary btn-sm nav-cta" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar
+          </a>
+        </li>
+      </ul>
+
+      <!-- Botão hambúrguer mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       SEÇÃO 1 – HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Formas decorativas de fundo -->
+    <div class="hero-bg">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Conteúdo textual -->
+      <div class="hero-content" data-animate="fade-up">
+        <span class="hero-badge">
+          <i class="fa-solid fa-award"></i> Excelência em Odontologia desde 2012
+        </span>
+
+        <h1 class="hero-title">
+          O sorriso que você<br />
+          <em>sempre sonhou</em><br />
+          está mais perto.
+        </h1>
+
+        <p class="hero-subtitle">
+          Tecnologia de última geração, profissionais especializados e atendimento que 
+          cuida de você de verdade — do primeiro contato ao resultado final perfeito.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/5544999999999?text=Olá!%20Gostaria%20de%20agendar%20minha%20avaliação%20gratuita."
+             class="btn btn-primary btn-xl" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            Agendar Avaliação Gratuita
+          </a>
+          <a href="#sobre" class="btn btn-ghost">
+            Saiba mais <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <!-- Estatísticas de prova social -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>+2.000</strong>
+            <span>Pacientes satisfeitos</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <strong>12+</strong>
+            <span>Anos de experiência</span>
+          </div>
+          <div class="stat-sep"></div>
+          <div class="stat-item">
+            <strong>98%</strong>
+            <span>Taxa de satisfação</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual lado direito -->
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="hero-img-wrap">
+          <!-- Representação gráfica da clínica (substituir por foto real) -->
+          <div class="hero-graphic">
+            <div class="hg-ring hg-ring-1"></div>
+            <div class="hg-ring hg-ring-2"></div>
+            <div class="hg-ring hg-ring-3"></div>
+            <div class="hg-center">
+              <i class="fa-solid fa-tooth"></i>
+            </div>
+            <div class="hg-dots">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <!-- Card flutuante de avaliação -->
+          <div class="hero-float-card">
+            <div class="hfc-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <strong>4.9 no Google</strong>
+            <span>+280 avaliações</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="hero-scroll">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 2 – SOBRE A CLÍNICA
+  ============================================================ -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <!-- Texto institucional -->
+        <div class="sobre-text" data-animate="fade-right">
+          <span class="section-label">Nossa história</span>
+          <h2 class="section-title">
+            Onde ciência<br /><em>encontra arte</em>
+          </h2>
+          <p class="body-text">
+            Fundada em 2012 com a missão de transformar sorrisos e elevar a autoestima de cada paciente, 
+            a Odonto Excellence une tecnologia de ponta ao cuidado genuíno com o ser humano.
+          </p>
+          <p class="body-text">
+            Cada tratamento é planejado individualmente, com protocolos internacionais e materiais 
+            de alta qualidade — garantindo resultados duradouros que superam expectativas.
+          </p>
+          <a href="https://wa.me/5544999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Odonto%20Excellence."
+             class="btn btn-outline" target="_blank" rel="noopener">
+            Fale conosco
+          </a>
+        </div>
+
+        <!-- Cards de diferenciais -->
+        <div class="diferenciais-grid" data-animate="fade-left">
+
+          <div class="dif-card">
+            <div class="dif-icon"><i class="fa-solid fa-microscope"></i></div>
+            <div>
+              <h4>Tecnologia Moderna</h4>
+              <p>Equipamentos digitais de última geração para diagnóstico preciso e tratamentos minimamente invasivos.</p>
+            </div>
+          </div>
+
+          <div class="dif-card">
+            <div class="dif-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <div>
+              <h4>Profissionais Qualificados</h4>
+              <p>Equipe especializada em constante atualização com os avanços científicos da odontologia.</p>
+            </div>
+          </div>
+
+          <div class="dif-card">
+            <div class="dif-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div>
+              <h4>Atendimento Humanizado</h4>
+              <p>Cada paciente é único. Escutamos, entendemos e planejamos juntos o melhor caminho.</p>
+            </div>
+          </div>
+
+          <div class="dif-card">
+            <div class="dif-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4>Segurança Total</h4>
+              <p>Protocolos rigorosos de esterilização e biossegurança em todos os procedimentos.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 3 – PROCEDIMENTOS PRINCIPAIS
+  ============================================================ -->
+  <section class="procedimentos" id="procedimentos">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Especialidades</span>
+        <h2 class="section-title">O que fazemos <em>por você</em></h2>
+        <p class="section-subtitle">
+          Tratamentos completos para uma saúde bucal impecável e um sorriso que transforma vidas.
+        </p>
+      </div>
+
+      <div class="proc-grid">
+
+        <!-- Card Implantes -->
+        <div class="proc-card" data-animate="fade-up" data-delay="0">
+          <div class="proc-top">
+            <div class="proc-icon"><i class="fa-solid fa-tooth"></i></div>
+            <span class="proc-badge">Mais solicitado</span>
+          </div>
+          <h3>Implantes Dentários</h3>
+          <p>A solução definitiva para dentes ausentes. Implantes de titânio com tecnologia guiada por computador para precisão total e recuperação acelerada.</p>
+          <ul class="proc-list">
+            <li><i class="fa-solid fa-check"></i> Implante imediato em casos selecionados</li>
+            <li><i class="fa-solid fa-check"></i> Carga imediata disponível</li>
+            <li><i class="fa-solid fa-check"></i> Materiais importados de alta qualidade</li>
+          </ul>
+          <a href="https://wa.me/5544999999999?text=Olá!%20Tenho%20interesse%20em%20Implantes%20Dentários."
+             class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar avaliação
+          </a>
+        </div>
+
+        <!-- Card Estética — destaque central -->
+        <div class="proc-card proc-featured" data-animate="fade-up" data-delay="150">
+          <div class="proc-top">
+            <div class="proc-icon proc-icon-light"><i class="fa-solid fa-star"></i></div>
+          </div>
+          <h3>Estética do Sorriso</h3>
+          <p>Facetas, lentes de contato dental, clareamento profissional e harmonização para resultados que encantam e duram anos.</p>
+          <ul class="proc-list proc-list-light">
+            <li><i class="fa-solid fa-check"></i> Lentes de contato dental ultra finas</li>
+            <li><i class="fa-solid fa-check"></i> Clareamento a laser</li>
+            <li><i class="fa-solid fa-check"></i> Design Digital do Sorriso (DDS)</li>
+          </ul>
+          <a href="https://wa.me/5544999999999?text=Olá!%20Tenho%20interesse%20em%20Estética%20do%20Sorriso."
+             class="btn btn-white btn-block" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar avaliação
+          </a>
+        </div>
+
+        <!-- Card Tratamentos Gerais -->
+        <div class="proc-card" data-animate="fade-up" data-delay="300">
+          <div class="proc-top">
+            <div class="proc-icon"><i class="fa-solid fa-stethoscope"></i></div>
+          </div>
+          <h3>Tratamentos Gerais</h3>
+          <p>Prevenção, restaurações, tratamento de canal, ortodontia e todos os cuidados que sua saúde bucal precisa para durar toda a vida.</p>
+          <ul class="proc-list">
+            <li><i class="fa-solid fa-check"></i> Ortodontia com alinhadores invisíveis</li>
+            <li><i class="fa-solid fa-check"></i> Tratamento de canal sem dor</li>
+            <li><i class="fa-solid fa-check"></i> Limpeza e profilaxia profissional</li>
+          </ul>
+          <a href="https://wa.me/5544999999999?text=Olá!%20Tenho%20interesse%20em%20Tratamentos%20Gerais."
+             class="btn btn-primary btn-block" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar avaliação
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 4 – APRESENTAÇÃO DO ESPECIALISTA
+  ============================================================ -->
+  <section class="dentista" id="dentista">
+    <div class="container">
+      <div class="dentista-grid">
+
+        <!-- Foto -->
+        <div class="dentista-photo-col" data-animate="fade-right">
+          <div class="dentista-photo-frame">
+            <!-- Substitua pelo <img> real da dentista -->
+            <div class="dentista-photo-placeholder">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div class="dentista-cro-badge">
+              <i class="fa-solid fa-id-badge"></i> CRO-PR 12.345
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="dentista-info" data-animate="fade-left">
+          <span class="section-label">Conheça nossa especialista</span>
+          <h2 class="section-title">
+            Dra. Ana Paula <em>Ferreira</em>
+          </h2>
+          <p class="dentista-espec">
+            <i class="fa-solid fa-tooth"></i> Implantodontia &amp; Estética Oral
+          </p>
+          <p class="body-text">
+            Com mais de 12 anos de experiência clínica, a Dra. Ana Paula é especialista em 
+            Implantodontia pela USP e mestre em Estética Oral pelo ILAPEO. Sua abordagem combina 
+            rigor científico com sensibilidade artística, criando sorrisos que refletem a 
+            personalidade única de cada paciente.
+          </p>
+          <p class="body-text">
+            Professora convidada em cursos nacionais e autora de artigos científicos, a Dra. Ana Paula 
+            acredita que um belo sorriso vai além da estética — é saúde, confiança e qualidade de vida.
+          </p>
+          <div class="dentista-creds">
+            <div class="cred">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Especialização em Implantodontia – USP</span>
+            </div>
+            <div class="cred">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Mestrado em Estética Oral – ILAPEO</span>
+            </div>
+            <div class="cred">
+              <i class="fa-solid fa-trophy"></i>
+              <span>Prêmio Excelência Clínica 2022</span>
+            </div>
+          </div>
+          <a href="https://wa.me/5544999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Ana%20Paula."
+             class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar com a Dra. Ana Paula
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 5 – ANTES E DEPOIS
+  ============================================================ -->
+  <section class="transformacoes" id="transformacoes">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Resultados reais</span>
+        <h2 class="section-title">Transformações que <em>falam por si</em></h2>
+        <p class="section-subtitle">Cada sorriso é uma história. Veja resultados reais dos nossos pacientes.</p>
+      </div>
+
+      <div class="transf-grid">
+
+        <!-- Transformação 1 -->
+        <div class="transf-card" data-animate="fade-up" data-delay="0">
+          <div class="transf-split">
+            <div class="transf-before">
+              <div class="transf-visual tv-before"><i class="fa-solid fa-tooth"></i></div>
+              <span>Antes</span>
+            </div>
+            <div class="transf-arrow">↔</div>
+            <div class="transf-after">
+              <div class="transf-visual tv-after"><i class="fa-solid fa-star"></i></div>
+              <span>Depois</span>
+            </div>
+          </div>
+          <div class="transf-desc">
+            <h4>Lentes de Contato Dental</h4>
+            <p>Fernanda, 34 anos — resultado em 2 sessões</p>
+          </div>
+        </div>
+
+        <!-- Transformação 2 -->
+        <div class="transf-card" data-animate="fade-up" data-delay="150">
+          <div class="transf-split">
+            <div class="transf-before">
+              <div class="transf-visual tv-before"><i class="fa-solid fa-tooth"></i></div>
+              <span>Antes</span>
+            </div>
+            <div class="transf-arrow">↔</div>
+            <div class="transf-after">
+              <div class="transf-visual tv-after"><i class="fa-solid fa-star"></i></div>
+              <span>Depois</span>
+            </div>
+          </div>
+          <div class="transf-desc">
+            <h4>Implante + Prótese</h4>
+            <p>Carlos, 52 anos — implante unitário imediato</p>
+          </div>
+        </div>
+
+        <!-- Transformação 3 -->
+        <div class="transf-card" data-animate="fade-up" data-delay="300">
+          <div class="transf-split">
+            <div class="transf-before">
+              <div class="transf-visual tv-before"><i class="fa-solid fa-tooth"></i></div>
+              <span>Antes</span>
+            </div>
+            <div class="transf-arrow">↔</div>
+            <div class="transf-after">
+              <div class="transf-visual tv-after"><i class="fa-solid fa-star"></i></div>
+              <span>Depois</span>
+            </div>
+          </div>
+          <div class="transf-desc">
+            <h4>Clareamento a Laser</h4>
+            <p>Juliana, 28 anos — 8 tons mais claro</p>
+          </div>
+        </div>
+
+        <!-- Transformação 4 -->
+        <div class="transf-card" data-animate="fade-up" data-delay="450">
+          <div class="transf-split">
+            <div class="transf-before">
+              <div class="transf-visual tv-before"><i class="fa-solid fa-tooth"></i></div>
+              <span>Antes</span>
+            </div>
+            <div class="transf-arrow">↔</div>
+            <div class="transf-after">
+              <div class="transf-visual tv-after"><i class="fa-solid fa-star"></i></div>
+              <span>Depois</span>
+            </div>
+          </div>
+          <div class="transf-desc">
+            <h4>Reabilitação Completa</h4>
+            <p>Marcos, 41 anos — harmonização do sorriso</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="transf-cta" data-animate="fade-up">
+        <p>Quer ser o nosso próximo caso de sucesso?</p>
+        <a href="https://wa.me/5544999999999?text=Olá!%20Vi%20os%20resultados%20e%20gostaria%20de%20agendar%20minha%20avaliação."
+           class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Quero transformar meu sorriso
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 6 – DEPOIMENTOS
+  ============================================================ -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">O que dizem nossos pacientes</span>
+        <h2 class="section-title">Histórias de <em>transformação</em></h2>
+      </div>
+
+      <div class="dep-grid">
+
+        <div class="dep-card" data-animate="fade-up" data-delay="0">
+          <div class="dep-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "Tinha muito medo de dentista, mas a Dra. Ana Paula e a equipe foram incríveis. 
+            Fiz meu implante sem dor e o resultado ficou perfeito. Finalmente sorrio sem vergonha!"
+          </blockquote>
+          <div class="dep-author">
+            <div class="dep-avatar">MR</div>
+            <div class="dep-info">
+              <strong>Maria Regina S.</strong>
+              <span>Implante Dentário · Maringá, PR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card" data-animate="fade-up" data-delay="150">
+          <div class="dep-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "As lentes de contato dental transformaram completamente minha autoestima. 
+            Em 2 sessões tive o sorriso que sempre sonhei. Vale cada centavo investido!"
+          </blockquote>
+          <div class="dep-author">
+            <div class="dep-avatar">JP</div>
+            <div class="dep-info">
+              <strong>João Pedro A.</strong>
+              <span>Estética do Sorriso · Sarandi, PR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card" data-animate="fade-up" data-delay="300">
+          <div class="dep-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "Clínica impecável, equipe acolhedora e resultado surpreendente. 
+            Fiz clareamento e depois as lentes. Recomendo demais para todos!"
+          </blockquote>
+          <div class="dep-author">
+            <div class="dep-avatar">CC</div>
+            <div class="dep-info">
+              <strong>Camila Costa</strong>
+              <span>Clareamento + Lentes · Maringá, PR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dep-card" data-animate="fade-up" data-delay="450">
+          <div class="dep-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "Atendimento de altíssimo nível do início ao fim. A Dra. Ana Paula explicou tudo 
+            detalhadamente e o pós-operatório foi tranquilo. Indico sem hesitar!"
+          </blockquote>
+          <div class="dep-author">
+            <div class="dep-avatar">RL</div>
+            <div class="dep-info">
+              <strong>Roberto Lima</strong>
+              <span>Reabilitação Oral · Paiçandu, PR</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 7 – CTA FINAL
+  ============================================================ -->
+  <section class="cta-final" id="agendar">
+    <div class="cta-bg">
+      <div class="cta-shape cta-s1"></div>
+      <div class="cta-shape cta-s2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content" data-animate="fade-up">
+        <span class="section-label section-label-light">Dê o primeiro passo</span>
+        <h2 class="cta-title">
+          Agende sua<br /><em>avaliação gratuita</em>
+        </h2>
+        <p class="cta-subtitle">
+          Converse com nossa equipe pelo WhatsApp, tire suas dúvidas e descubra qual o 
+          melhor tratamento para o seu caso — sem compromisso e sem custo.
+        </p>
+        <div class="cta-checks">
+          <span><i class="fa-solid fa-circle-check"></i> Avaliação 100% gratuita</span>
+          <span><i class="fa-solid fa-circle-check"></i> Resposta em minutos</span>
+          <span><i class="fa-solid fa-circle-check"></i> Sem compromisso</span>
+        </div>
+        <a href="https://wa.me/5544999999999?text=Olá!%20Gostaria%20de%20agendar%20minha%20avaliação%20gratuita%20na%20Odonto%20Excellence."
+           class="btn btn-white btn-xl" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Agendar pelo WhatsApp agora
+        </a>
+        <p class="cta-note">
+          <i class="fa-solid fa-clock"></i> Seg–Sex: 8h–18h &nbsp;|&nbsp; Sáb: 8h–12h
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEÇÃO 8 – LOCALIZAÇÃO
+  ============================================================ -->
+  <section class="localizacao" id="localizacao">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-label">Como nos encontrar</span>
+        <h2 class="section-title">Nossa <em>localização</em></h2>
+      </div>
+      <div class="loc-grid">
+
+        <!-- Informações de contato -->
+        <div class="loc-info" data-animate="fade-right">
+
+          <div class="loc-item">
+            <div class="loc-ico"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Av. Brasil, 1234 – Sala 501<br />Zona 01 – Maringá, PR – 87013-010</p>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-ico"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Telefone / WhatsApp</h4>
+              <p><a href="tel:+5544999999999">(44) 99999-9999</a></p>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-ico"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Horário de Atendimento</h4>
+              <p>Segunda a Sexta: 8h às 18h<br />Sábado: 8h às 12h<br />Domingo: Fechado</p>
+            </div>
+          </div>
+
+          <div class="loc-item">
+            <div class="loc-ico"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>E-mail</h4>
+              <p><a href="mailto:contato@odoexcellence.com.br">contato@odoexcellence.com.br</a></p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/5544999999999?text=Olá!%20Gostaria%20de%20agendar%20minha%20avaliação."
+             class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Falar pelo WhatsApp
+          </a>
+        </div>
+
+        <!-- Mapa Google Maps -->
+        <div class="loc-map" data-animate="fade-left">
+          <!--
+            INSTRUÇÃO: Substitua a URL abaixo pelo link embed real da clínica:
+            Google Maps → compartilhar → incorporar mapa → copiar iframe src
+          -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238938.8049074839!2d-51.91773739999999!3d-23.4272609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd0b11e1f3e43%3A0xb9d95cfb5a01b2c8!2sMaringá%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização Odonto Excellence – Maringá, PR">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RODAPÉ
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-icon"><i class="fa-solid fa-tooth"></i></span>
+            <span class="logo-text">Odonto<strong>Excellence</strong></span>
+          </a>
+          <p>Transformando sorrisos e elevando autoestimas desde 2012. Tecnologia, cuidado e excelência em cada atendimento.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/5544999999999" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Procedimentos</h5>
+          <ul>
+            <li><a href="#procedimentos">Implantes Dentários</a></li>
+            <li><a href="#procedimentos">Estética do Sorriso</a></li>
+            <li><a href="#procedimentos">Lentes de Contato Dental</a></li>
+            <li><a href="#procedimentos">Clareamento a Laser</a></li>
+            <li><a href="#procedimentos">Ortodontia</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>A Clínica</h5>
+          <ul>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#dentista">Nossa Especialista</a></li>
+            <li><a href="#transformacoes">Antes e Depois</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <p><i class="fa-solid fa-location-dot"></i> Av. Brasil, 1234 – Sala 501<br />Maringá, PR</p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:+5544999999999">(44) 99999-9999</a></p>
+          <p><i class="fa-solid fa-clock"></i> Seg–Sex: 8h–18h | Sáb: 8h–12h</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Odonto Excellence. Todos os direitos reservados.</p>
+        <p>CRO-PR 12.345 · Dra. Ana Paula Ferreira</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÃO WHATSAPP FLUTUANTE (sempre visível)
+  ============================================================ -->
+  <a href="https://wa.me/5544999999999?text=Olá!%20Gostaria%20de%20agendar%20minha%20avaliação%20gratuita."
+     class="wf-float" id="wfFloat" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wf-pulse"></span>
+    <span class="wf-tooltip">Agendar agora!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
